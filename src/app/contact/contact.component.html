@@ -1,0 +1,63 @@
+
+<section class="a bg-white">
+    <div class="container d-flex justify-content-center align-items-center flex-column mt-5 p-5 text-white">
+        <h1 class="text-center fw-bold mt-5 text-black">conatct section</h1>
+        <h2 class="text-center text-white position-relative">
+            <!-- Lines before and after the icon -->
+            <span class="line"></span>
+            <i class="fa-regular fa-star text-black"></i>
+            <span class="line"></span>
+        </h2>
+        <div class="row justify-content-center align-items-center">
+            @defer (on interaction(nour)) {
+                <label class="text-success">userName:</label>
+
+            }
+           
+          <input type="text" class="form-control" placeholder="userName"#nour>
+          <br>
+          <br>
+          @defer (on interaction(n)) {
+            <label class="text-success">userAge:</label>
+
+        }
+        <input type="text" class="form-control" placeholder="userAge"#n>
+        <br>
+        <br>
+      
+      @defer (on interaction(no)) {
+        <label class="text-success">userEmail</label>
+
+    }
+    <input type="text" class="form-control" placeholder="userEmail"#no>
+    <br>
+    <br>
+  
+  @defer (on interaction(nou)) {
+    <label class="text-success">userPassword</label>
+
+}
+<input type="text" class="form-control" placeholder="userPassword"#nou>
+<br>
+<br>
+<button type="button" class="btn btn-success">send Message</button>
+
+
+
+
+        </div>
+    </div>
+    
+</section>
+<style>
+    .line {
+        display: inline-block;
+        width: 50px; /* Adjust the width of the lines */
+        height: 5px; /* Line thickness */
+        background-color: black; /* Line color */
+        margin: 0 10px; /* Space between the line and the icon */
+    }
+    .text-center i {
+        vertical-align: middle; /* Align icon vertically with the lines */
+    }
+</style>

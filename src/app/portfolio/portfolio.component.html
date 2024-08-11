@@ -1,0 +1,65 @@
+<section class="a">
+    <div class="container d-flex justify-content-center align-items-center flex-column mt-5 p-5 text-white">
+      <h1 class="text-center fw-bold mt-5 text-black">Portfolio Component</h1>
+      <h2 class="text-center text-black position-relative">
+        <span class="line"></span>
+        <i class="fa-regular fa-star text-black"></i>
+        <span class="line"></span>
+      </h2>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-md-4 position-relative item" (click)="clickme('./assets/images/port2.png')" >
+          <img src="./assets/images/poert1.png" alt="" class="w-100">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative item" (click)="clickme('./assets/images/port2.png')">
+          <img src="./assets/images/port2.png" alt="" class="w-100">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative item" (click)="clickme('./assets/images/port3.png')">
+          <img src="./assets/images/port3.png" alt="" class="w-100">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-md-4 position-relative item"(click)="clickme('./assets/images/poert1.png')" >
+          <img src="./assets/images/poert1.png" alt="" class="w-100">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative item" (click)="clickme('./assets/images/port2.png')">
+          <img src="./assets/images/port2.png" alt="" class="w-100">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative item" (click)="clickme('./assets/images/port3.png')">
+          <img src="./assets/images/port3.png" alt="" class="w-100">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="lightbox  d-none justify-content-center align-items-center">
+        <div class="light">
+            <img src="../../assets/images/poert1.png" alt="">
+        </div>
+    </div>
+  
+    <div *ngIf="selectedImage" class="lightbox d-flex justify-content-center align-items-center" (click)="closeLightbox()">
+        <div class="layerlight">
+          <img [src]="selectedImage" alt="Portfolio Image">
+        </div>
+      </div>
+      
+  </section>
+  
